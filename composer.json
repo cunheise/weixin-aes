@@ -1,0 +1,31 @@
+{
+    "name": "cunheise/weixin-aes-wrapper",
+    "description": "a wrapper for weixin ase lib",
+    "type": "library",
+    "license": "Mit",
+    "authors": [
+        {
+            "name": "Nathan Wu",
+            "email": "nathan@joomlacreator.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wx\\": "src/Wx"
+        },
+        "files": [
+            "lib/errorCode.php",
+            "lib/wxBizDataCrypt.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/"
+        }
+    }
+}
